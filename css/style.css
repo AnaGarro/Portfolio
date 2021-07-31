@@ -1,0 +1,398 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+/*empieza el sidebar-menu*/
+
+/*.sidebar-menu { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 30px 0 0 20px;
+    background-color: #fff;
+    box-shadow: -10px 0 20px rgb(0 0 0 / 30%);
+    transform: translateX(100%);
+    transition: 0.2s;
+}
+
+/*termina el sidebar-menu*/
+
+/*empieza el header*/
+header{ 
+    background: #f7f3e9;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end; 
+    align-items: center;
+    position: fixed;
+    box-shadow: 10px 0px 15px #00000080;
+}
+
+
+header nav {
+    padding: 1rem 2rem ;
+    margin-right: 110px;
+}
+      
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.3vw;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+header nav ul li a:hover{
+        color:#5eaaa8;
+}
+
+#boton{        
+        color: white; 
+        padding: 10px;
+        background: #a3d2ca;
+        border-radius: 20px;
+        transition: 1s;
+}
+#boton:hover {
+    color: black;
+}
+/*termina el header*/
+
+/*-------empieza la presentacion------*/ 
+
+.presentacion{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 700px;
+   width: 80%;
+   margin: 0 auto;
+   line-height: 2rem;
+}
+
+#imagen{ 
+    height: 400px;
+    width: 400px;
+}
+
+#boton2{        
+    color: white; 
+    padding: 8px;
+    background: #a3d2ca;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 8rem;
+    text-decoration: none;
+    transition: 1s;
+}
+#boton2:hover{
+background-color: #5eaaa8;
+}
+/*--------fin de la presentacion-----*/
+
+
+.habilidades{ 
+    background-color: #a3d2ca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conocimientosyproyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    line-height: 1rem;
+}
+
+.icon{
+    font-size: 5em;
+    padding: .4em;
+}
+.cita{
+    background-color: #f05945;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: #f7f3e9;
+    }
+
+quote {
+    text-align: center;
+    width: 600px;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+}
+
+#comillas{
+    width: 80px;
+    height: 80px;
+    padding: 2rem;
+    }
+
+#someone{
+    font-weight: bold;
+    padding: 50px;
+    font-size: 2.5vw;
+}
+.cajapadre1{
+                    
+    display: flex;
+    width: 800px;
+    justify-content:center ;
+    flex-wrap: wrap; 
+    margin: 70px auto 80px auto;                   
+}
+
+.cajapadre1 > div{
+    height: 190px;
+    width: 190px;
+    background-color:white;
+    margin: 10px;
+    border: grey solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajapadre1 p{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.caja-hija1:hover{
+    border-color: #f05945;
+    color: #f05945;
+}
+
+.cajapadre2{        
+    display: flex;
+    width: 80%;
+    justify-content:space-between ;
+    flex-wrap: wrap; 
+    margin: 60px auto;                  
+}
+
+.cajapadre2 > a{
+    height: 270px;
+    width: 290px;
+    background-color:white;
+    margin: 12px;
+    border: grey solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cajapadre2 p{
+    font-size: 1.1em;
+    font-weight: bold;
+    /* color: black; */
+}
+
+.caja-hija2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: grey;
+}
+
+.caja-hija2:hover{
+    border-color: #f05945;
+    color: #f05945;
+}
+
+.imagenes{
+    width: 170px;
+    height: 170px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/*comienza el formulario*/
+#contactame{
+    background-color: #f7f3e9;
+    height: 40em;
+    display: flex;
+    align-items: center;
+    
+}
+
+#border{
+   
+    display: flex;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px;
+    background-color:white;
+}
+
+#text-contact{
+    width: 50%;
+    
+}
+
+section div ul li{
+    list-style: none;
+    line-height: 3em;
+    
+}
+
+section div ul{
+    margin-top: 2em;
+}
+
+section div ul li a{
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 3em;
+    padding: 10px 0;
+}
+
+
+
+.icon-contact{
+    /* width: 2.7rem; */
+    /* height: 2.7rem; */
+    padding: .4em;
+    color: #5eaaa8;
+    border-radius: 50%;
+    /* line-height: 4em; */
+    text-align: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+
+.icon-contact:hover{
+    color: white;
+    background-color: #5eaaa8;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+/****comienza el footer****/
+footer{
+    background-color: #5eaaa8;
+    height: 19em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+footer ul li{ 
+    display: inline;
+    padding: 1rem 1rem ;
+    list-style: none;
+    font-size: 1.3vw;
+    }
+
+.footer-nav{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+
+}    
+
+footer ol{
+    margin: 3em 0;
+}
+
+footer ol li{ 
+    display: inline;
+    margin: 0 .6em;
+    
+}
+
+.icono-footer {
+    
+    padding: .5em 0.5em;
+    background-color: white;
+    border-radius: 50%;
+    /* line-height: 2.7rem; */
+    text-align: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 1.5em;
+    color: #5eaaa8;
+    
+ }
+
+ .icono-footer:hover
+ {
+     border-radius: 50px;
+     background-color: #5eaaa8;
+     color: white;
+     /* border: 1px solid white; */
+     box-shadow: 0px 0px 0px 1px white inset;
+     transition: 0.1s;
+ }
+
+/*.icono-footer:focus{
+     
+     color: #fff;
+     background-color: #8338ec;
+     border: 1px solid #fff;
+ }*/
+
+ footer p{
+    
+     color: white;
+     font-size: 1.1em;
+ }
+
+ .heart{
+     color: rgb(220, 17, 17);
+ }
+
