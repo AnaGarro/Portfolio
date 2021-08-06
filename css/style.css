@@ -101,8 +101,8 @@ header nav ul li a:hover{
 }
 
 #imagen{ 
-    height: 400px;
-    width: 400px;
+    height: 25em;
+    width: 25em;
 }
 
 #boton2{        
@@ -283,16 +283,14 @@ quote {
 /* ------Comienza mis proyectos------- */
 
 /*----------comienza el formulario-------*/
-#contactame{
+.contactame{
     background-color: #ededed;
     height: 50em;
     display: flex;
     align-items: center;
-    
-    
 }
 
-#border{
+.border{
    
     display: flex;
     width: 80%;
@@ -306,7 +304,7 @@ quote {
 }
 
 .contact-div{
-    width: 50%;
+    flex-basis: 50%;
     margin-left: 3em;
     
 }
@@ -318,6 +316,7 @@ quote {
 section div ul li{
     list-style: none;
     line-height: 3em;
+    width: 16em;
     
 }
 
@@ -329,6 +328,7 @@ section div ul li a{
     text-decoration: none;
     font-size: 1em;
     line-height: 3em;
+    color: black;
 }
 
 .titulo{
@@ -337,11 +337,14 @@ section div ul li a{
     margin: 0.5em 0;
 }
 
+.contact-list:hover .icon-contact{
+    background-color:  #8D61A5;
+    color: #bbe9e8;
+    transition: color .5s;
+}
 
-.contact-list:hover{
-    color: black;
-
-
+.contact-list:hover a{
+    color: #8D61A5;
 }
 
 .icon-contact{
@@ -355,14 +358,6 @@ section div ul li a{
     margin-right: 10px;
     
 }
-
-.icon-contact:hover{
-    color: white;
-    background-color: #5eaaa8;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
 
 .nombreyapellido{
     display: inline-block;
@@ -387,12 +382,9 @@ label{
     transition: .5s;
 }
 
-.form-div{
-    margin: 1em 0;
-}
 form input[type="text"]
 {
-	width: 14.5em;
+	width: 80%;
 	margin:8px 0;
 	
 }
@@ -406,9 +398,7 @@ textarea{
 	width: 80%;
 	height: 9em;
 	margin:8px 0;
-	/*resize: vertical | horizontal | none | both*/
 	resize:none;
-	/* display:block; */
 }
 
 .button{        
@@ -416,18 +406,17 @@ textarea{
     padding: 10px 45px 10px 45px;
     background: #b390c5;
     border-radius: 20px;
-    transition: 1s;
     border: none;
     font-size: 1rem;
     letter-spacing: 2px;
-    
 }
 .button:hover {
 background-color: #8D61A5;
+transition: 1s;
 }
 /*----------Fin el formulario-------*/
 
-/****comienza el footer****/
+/*-------comienza el footer---------*/
 
 footer{
     background-color: #a3d2ca;
@@ -440,7 +429,7 @@ footer{
 
 footer ul li{ 
     display: inline;
-    padding: 1rem 1rem ;
+    padding: 1rem;
     list-style: none;
     font-size: 1.3vw;
     }
@@ -450,8 +439,6 @@ footer ul li{
     text-transform: uppercase;
     color: #8D61A5;
     letter-spacing: 2px;
-  
-
 }    
 
 footer ol{
@@ -461,12 +448,10 @@ footer ol{
 footer ol li{ 
     display: inline;
     margin: .6em;
-    
 }
 
 .icono-footer {
-    
-    padding: .5em 0.5em;
+    padding: .5em;
     background-color: #8D61A5;
     border-radius: 50%;
     text-align: center;
@@ -474,11 +459,9 @@ footer ol li{
     transition: 0.3s;
     font-size: 1.5em;
     color: #a3d2ca;
-    
  }
 
- .icono-footer:hover
- {
+ .icono-footer:hover{
      border-radius: 50px;
      background-color: #a3d2ca;
      color: #8D61A5;
@@ -486,23 +469,13 @@ footer ol li{
      transition: 0.1s;
  }
 
-/*footer ol li:focus{
-     
-     color: #fff;
-     background-color: #8338ec;
-     border: 1px solid #fff;
- }*/
-
  footer p{
-    
      color: #8D61A5;
      font-size: 1.1em;
-     
  }
 
  .heart{
      color: rgb(220, 17, 17);
-     
  }
 
  /* -------comienza media queries-------- */
@@ -535,7 +508,6 @@ footer ol li{
         padding: 1rem;
         margin: auto;
     }
-
     .proyectos{
         height: 85em;
     }
@@ -543,6 +515,7 @@ footer ol li{
     .conocimientos{
         margin-top: 5em;
     }
+   
 }
 @media(max-width: 936px){
     .cajapadre1{
@@ -551,7 +524,7 @@ footer ol li{
     .habilidades{
         height: 75em;
     }
-    #border{
+    .border{
         width: 90%;
        margin: auto 10px;
     }
@@ -597,14 +570,177 @@ footer ol li{
     .descripcion{
         width: 30em;
     }
-    #border{
-        border: none;
-        border-radius: none;
+    .contactame{
+        height: 65em;
+       
+    }
+    .border{
+        flex-direction: column;
+    }
+    #line{
+        border-bottom: 1px solid #8D61A5;
+        width: 80%;
+    }
+    footer ul li{ 
+        padding: 1rem;
+        font-size: 1em;
+    }
+    footer p{
+        font-size: .9em;
     }
 
 }
-@media(max-width: 320px){
-    body{
-        background-color:silver;
+@media(max-width: 740px){
+    #anagarro{
+        font-size: 3em;
+       
     }
+    .perfil{
+        line-height: 3em;
+        font-size: 1em;
+    }
+    
+    #imagen{ 
+        height: 20em;
+        width: 20em;
+    }
+    quote {
+        width: 37.5em;
+        letter-spacing: 2px;
+        line-height: 1.3rem;
+        font-size: 1em;
+    }
+    .proyectos{
+        height: 85em;
+    }
+    .cajapadre2{        
+        width: 100%;
+        margin: 60px auto;
+       
+    }
+    .cajapadre2 > a{
+        height: 12em;
+        width: 12em;
+        margin: 0.6em;
+        padding: 1em;
+    }
+    .imagenes{
+        width: 8.6em;
+        height: 8.6em;
+        padding: 2rem;
+    }
+    
+    .cajapadre2 p{
+        font-size: 0.8em;
+    }
+
+    footer ul li{ 
+        padding: 1rem;
+        font-size: 0.8em;
+    }
+
+     .icono-footer {
+        padding: .4em;
+        font-size: 1.2em;
+        
+    }
+    footer p{
+        font-size: .9em;
+    }
+
+@media(max-width: 646px){
+    .cajapadre1{
+        width: 30em; 
+        margin: 70px auto 80px auto;                   
+    }
+    
+    .cajapadre1 > div{
+        height: 10em;
+        width: 10em;
+    }
+    
+    .cajapadre1 p{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    .icon{
+        font-size: 4em;
+        padding: .2em;
+    }
+    #comillas{
+        width: 3em;
+        height: 3em;
+        padding: 2rem;
+    }
+    .conocimientosyproyectos{
+        font-size: 2.3rem;
+    }
+    .titulo{
+        font-size: 2.3em;
+    }
+
+} 
+@media(max-width: 600px){
+    quote {
+        width: 30.5em;
+        letter-spacing: 2px;
+        line-height: 1rem;
+        font-size: 0.9em;
+    }
+
+}
+@media(max-width: 508px){
+    .presentacion{
+        height: 600px;
+    }
+    #imagen{ 
+        height: 15em;
+        width: 15em;
+        margin-top: 20px;
+    }
+    .descripcion{
+        font-size: .8em;
+        
+    }
+    .habilidades{
+        height: auto;
+    }
+    .cajapadre1{
+        width: 20em;
+                        
+    }
+    .cita{
+        height: auto;
+    }
+    .proyectos{
+        height: auto;
+        
+    }
+    .cajapadre2{
+        width: 20em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conocimientosyproyectos{
+        font-size: 2rem;
+    }
+    #text-contact{
+        font-size: .8em;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    label{
+        font-weight: bold;
+        font-size: .9em;
+       
+    }
+    .button{
+        font-size: .8em;
+    }
+    footer{
+        height: 15em;
+    }
+}
+
 }
