@@ -7,7 +7,10 @@
         <link href="css/style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/217c3301ba.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -21,10 +24,12 @@
             </nav>
         </header>
         <!-- <section class="sidebar-menu"></section> -->
+
+        <!-------------Comienza la presentacion-------->
         <section class="presentacion">
-            <div>
-                <h3>¡Hola! Soy</h3>
-                <h1>Ana Garro</h1>
+            <div class="perfil">
+                <h2>¡Hola! Soy</h2>
+                <h1 id="anagarro">Ana Garro</h1>
                 <p>Desarrolladora, guitarrista y fan de las matemáticas.</p>
                 <a href="#misproyectos" id="boton2">lo que hago</a>
             </div>
@@ -32,6 +37,9 @@
                 <img id="imagen" src="images/icono.svg">
             </div>
         </section>
+        <!------------Terminala presentación------------>
+
+        <!--------Comienza Mis Conocimientos----------->
         <section class="habilidades"  id="misconocimientos">
             <div>
                 <h1 class="conocimientosyproyectos">Mis conocimientos</h1>
@@ -65,22 +73,32 @@
                     <i class="icon devicon-git-plain colored"></i>
                     <p>GIT</p>
                 </div>
-
             </div>
         </section>
+
+        <!--------Termina Mis Conocimientos----------->
+
+        <!-------------Comienza la cita--------------->
+
         <section class="cita">
             <img id="comillas" src="images/double-quotes.svg"> <br>
             <quote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aspernatur expedita eveniet quis eius. Enim veniam nesciunt inventore dignissimos doloremque explicabo.</quote>
             <h1 id="someone">Someone</h1>
         </section>
-        <section class="habilidades" id="misproyectos">
-            <div>
+
+        <!-------------Termina la cita--------------->
+
+        <!-------------Comienza Mis Proyectos--------------->
+
+        <section class="proyectos" id="misproyectos">
+            <div class="conocimientos">
                 <h1 class="conocimientosyproyectos">Mis proyectos</h1>
                 <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, perspiciatis? Reprehenderit, illum excepturi. Reiciendis facilis suscipit labore sed deleniti.</p>
             </div>
 
             <div class="cajapadre2">
                 <a href="#" target="_blank" rel="noopener noreferrer" alt="portfolio" class="caja-hija2">
+                    <img src="images/undraw_My_universe_re_txot.svg" class="imagenes">
                    <p>Portfolio</p>
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer" alt="generador-de-memes" class="caja-hija2">
@@ -110,41 +128,57 @@
 
             </div>
         </section>
+        <!----------------Termina Mis Proyectos----------------->
 
-        <!--comienza el formulario-->
+        <!--------------comienza planilla de contacto----------->
 
         <section id="contactame">
             <div id="border">
-                <div>
+                <div class="contact-div">
                     <h1 class="titulo">Contactame</h1>
-                    <p id="text-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi! Ipsam necessitatibus deleniti, modi earum debitis unde. Vitae at obcaecati aperiam aut magnam aspernatur, temporibus ipsam modi facilis doloribus ipsum?</p>
+                    <p id="text-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi! Ipsam necessitatibus deleniti, modi earum debitis unde.</p>
                     <ul>
-                        <li><a href ><i class="icon-contact fab fa-twitter"></i> @AnaGarro</a></li>
-                        <li><a href ><i class="icon-contact fab fa-github-alt"></i> AnaGarro</a></li>
-                        <li><a href ><i class="icon-contact fab fa-linkedin-in"></i> anagarro</a></li>
-                        <li><a href ><i class="icon-contact fas fa-envelope-square"></i> anaceciliagarro@gmail.com</a></li>
+                        <li class="contact-list"><a href ><i class="icon-contact fab fa-twitter"></i> @AnaGarro</a></li>
+                        <li class="contact-list"><a href ><i class="icon-contact fab fa-github-alt"></i> AnaGarro</a></li>
+                        <li class="contact-list"><a href ><i class="icon-contact fab fa-linkedin-in"></i> anagarro</a></li>
+                        <li class="contact-list"><a href ><i class="icon-contact fas fa-envelope-square"></i> anaceciliagarro@gmail.com</a></li>
                     </ul> 
 
                 </div>
-                <div>
+                <!-------comienza el formulario------->
+                <div class="contact-div">
                     <h1 class="titulo">Escribime</h1>
                     <form method="POST" action="procesar.php">
-                        <label>Nombre:<br>
-                            <input type="text" name="name" required="required" maxlength="20"></label><br>
-                        <label>Apellido:<br>
-                            <input type="text" name="surname" required="required" maxlength="20"></label><br>
-                        <label>Email:<br>
-                            <input type="text" name="email" required="required" maxlength="30"></label><br>
-                        <label>Mensaje:<br>
-                        <textarea name="mensaje" required="required"></textarea></label>
+                    <div class="nombreyapellido" class="form-div">
+                        <label>Nombre*<br>
+                            <input class="input-class" type="text" name="name" placeholder="p. ej.: Ana" required="required" maxlength="20"></label>
+                    </div>
+                    <div class="nombreyapellido" class="form-div">
+                        <label>Apellido*<br>
+                            <input class="input-class" type="text" name="surname" placeholder="p. ej.: Garro" required="required" maxlength="20"></label>
+                    </div>
+                    <div class="form-div">
+                        <label>Email*<br>
+                            <input class="input-class" type="email" name="email" placeholder="p. ej.: anaceciliagarro@gmail.com" required="required" maxlength="30"></label>
+
+                    </div>
+                    <div class="form-div">
+                        <label>Mensaje*<br>
+                            <textarea class="input-class" name="mensaje" placeholder="Escriba un mensaje aquí" required="required"></textarea>
+                        </label>
+                    </div class="form-div">
+                    <div class="form-div">
+                        <button type="submit" class="button"> Enviar</button>
+                    </div>
                         
                     </form> 
                 </div>
+                <!-------termina el formulario------->
             </div>
         </section>
+        <!--------------termina planilla de contacto----------->
 
-        <!--termina el formulario-->
-
+        <!----------------comienza el footer----------------->
         <footer>
             <nav>
                 <ul>
@@ -163,5 +197,6 @@
             <p>Hecho con  <i class="heart fas fa-heart"></i>  por Ana</p>
 
         </footer>
+         <!----------------termina el footer----------------->
       </body>
 </html>
