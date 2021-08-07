@@ -580,10 +580,7 @@ footer ol li{
         border-bottom: 1px solid #8D61A5;
         width: 80%;
     }
-    footer ul li{ 
-        padding: 1rem;
-        font-size: 1em;
-    }
+    
     footer p{
         font-size: .9em;
     }
@@ -642,7 +639,7 @@ footer ol li{
         padding: .4em;
         font-size: 1.2em;
     }
-    
+
     footer p{
         font-size: .9em;
     }
