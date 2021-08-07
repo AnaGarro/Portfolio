@@ -7,26 +7,7 @@ body{
     
 }
 
-/*empieza el sidebar-menu*/
-
-/*.sidebar-menu { 
-    position: fixed;
-    top: 0;
-    right: 0;
-    max-width: 300px;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    padding: 30px 0 0 20px;
-    background-color: #fff;
-    box-shadow: -10px 0 20px rgb(0 0 0 / 30%);
-    transform: translateX(100%);
-    transition: 0.2s;
-}
-
-/*termina el sidebar-menu*/
-
-/*empieza el header*/
+/*------empieza el header------*/
 header{ 
     background: #F0DDF7;
     height: 100px;
@@ -43,7 +24,6 @@ header nav {
     margin-right: 110px;
 }
       
-
 header nav ul li{
     list-style: none;
     display: inline;
@@ -52,7 +32,6 @@ header nav ul li{
     padding: 5px;
     margin: 10px;
     font-size: 1.3vw;
-
 }
 
 header nav ul li a{
@@ -61,20 +40,21 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-        color:#5eaaa8;
+    color:#5eaaa8;
 }
 
 #boton{        
-        color: white; 
-        padding: 10px;
-        background: #a3d2ca;
-        border-radius: 20px;
-        transition: 1s;
+    color: white; 
+    padding: 10px;
+    background: #a3d2ca;
+    border-radius: 20px;
+    transition: 1s;
 }
+
 #boton:hover {
     color: black;
 }
-/*termina el header*/
+/*------termina el header-------*/
 
 /*-------empieza la presentacion------*/ 
 
@@ -94,6 +74,7 @@ header nav ul li a:hover{
     font-size: 5em;
     color: #835B94;
 }
+
 .perfil{
     line-height: 3.5em;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -116,12 +97,15 @@ header nav ul li a:hover{
     text-decoration: none;
     transition: 1s;
 }
+
 #boton2:hover{
 background-color: #5eaaa8;
 }
+
 /*--------fin de la presentacion-----*/
 
 /*--------Comienzo de mis conocimientos-----*/
+
 .habilidades{ 
     background-color: #a3d2ca;
     display: flex;
@@ -131,8 +115,7 @@ background-color: #5eaaa8;
     height: 65em;
 }
 
-.cajapadre1{
-                    
+.cajapadre1{           
     display: flex;
     width: 50em;
     justify-content:center ;
@@ -163,7 +146,6 @@ background-color: #5eaaa8;
     border-color: #ab5ed5;
     color: #ab5ed5;
 }
-
 
 .conocimientosyproyectos{
     display: flex;
@@ -240,7 +222,6 @@ quote {
     width: 65em;
     flex-wrap: wrap; 
     margin: 60px auto;
-    
 }
 
 .cajapadre2 > a{
@@ -279,7 +260,6 @@ quote {
     margin: 0 auto;
 }
 
-
 /* ------Comienza mis proyectos------- */
 
 /*----------comienza el formulario-------*/
@@ -291,7 +271,6 @@ quote {
 }
 
 .border{
-   
     display: flex;
     width: 80%;
     border: 1px solid gray;
@@ -300,13 +279,11 @@ quote {
     padding: 30px;
     background-color: #ecd5f9;
     background-image: linear-gradient(180deg, #ecd5f9 0%, #c6e0e0 56%);
-
 }
 
 .contact-div{
     flex-basis: 50%;
     margin-left: 3em;
-    
 }
 
 #text-contact{
@@ -317,7 +294,6 @@ section div ul li{
     list-style: none;
     line-height: 3em;
     width: 16em;
-    
 }
 
 section div ul{
@@ -355,8 +331,7 @@ section div ul li a{
     align-items: center;
     transition: 0.3s;
     font-size: 1.5em;
-    margin-right: 10px;
-    
+    margin-right: 10px;   
 }
 
 .nombreyapellido{
@@ -366,7 +341,6 @@ section div ul li a{
 label{
     font-weight: bold;
     font-size: 1.1em;
-   
 }
 
 .input-class {
@@ -382,8 +356,7 @@ label{
     transition: .5s;
 }
 
-form input[type="text"]
-{
+form input[type="text"]{
 	width: 80%;
 	margin:8px 0;
 	
@@ -403,7 +376,7 @@ textarea{
 
 .button{        
     color: white; 
-    padding: 10px 45px 10px 45px;
+    padding: 10px 45px;
     background: #b390c5;
     border-radius: 20px;
     border: none;
@@ -414,6 +387,7 @@ textarea{
 background-color: #8D61A5;
 transition: 1s;
 }
+
 /*----------Fin el formulario-------*/
 
 /*-------comienza el footer---------*/
@@ -462,21 +436,42 @@ footer ol li{
  }
 
  .icono-footer:hover{
-     border-radius: 50px;
-     background-color: #a3d2ca;
-     color: #8D61A5;
-     box-shadow: 0px 0px 0px 1px #8D61A5 inset;
-     transition: 0.1s;
+    border-radius: 50px;
+    background-color: #a3d2ca;
+    color: #8D61A5;
+    box-shadow: 0px 0px 0px 1px #8D61A5 inset;
+    transition: 0.1s;
  }
 
  footer p{
-     color: #8D61A5;
-     font-size: 1.1em;
+    color: #8D61A5;
+    font-size: 1.1em;
  }
 
  .heart{
-     color: rgb(220, 17, 17);
+    color: rgb(220, 17, 17);
  }
+ /* -----termina el footer------- */
+
+
+/*comienza section para sombra lateral*/
+
+.sombra-lateral{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 20px 0 0 20px;
+    box-shadow: -10px 0 20px #00000080;
+    transform: translateX(100%);
+    transition: 0.2s;
+}
+
+/* termina section para sombra lateral*/
+
 
  /* -------comienza media queries-------- */
 
@@ -521,13 +516,16 @@ footer ol li{
     .cajapadre1{
        width: 80%;
     }
+
     .habilidades{
         height: 75em;
     }
+
     .border{
         width: 90%;
        margin: auto 10px;
     }
+
     .cajapadre2 > a{
         height: 14.25em;
         width: 12.5em;
@@ -535,6 +533,7 @@ footer ol li{
         padding: 1em;
         text-align: center;
     }
+
     .descripcion{
         width: 30em;
     }
@@ -642,8 +641,8 @@ footer ol li{
      .icono-footer {
         padding: .4em;
         font-size: 1.2em;
-        
     }
+    
     footer p{
         font-size: .9em;
     }
@@ -682,7 +681,7 @@ footer ol li{
 } 
 @media(max-width: 600px){
     quote {
-        width: 30.5em;
+        width: auto;
         letter-spacing: 2px;
         line-height: 1rem;
         font-size: 0.9em;
@@ -693,11 +692,13 @@ footer ol li{
     .presentacion{
         height: 600px;
     }
+
     #imagen{ 
         height: 15em;
         width: 15em;
         margin-top: 20px;
     }
+
     .descripcion{
         font-size: .8em;
         
@@ -706,41 +707,47 @@ footer ol li{
         height: auto;
     }
     .cajapadre1{
-        width: 20em;
-                        
+        width: 20em;                    
     }
+
     .cita{
         height: auto;
     }
+
     .proyectos{
         height: auto;
-        
     }
+
     .cajapadre2{
         width: 20em;
         flex-direction: column;
         align-items: center;
     }
+
     .conocimientosyproyectos{
         font-size: 2rem;
     }
+
     #text-contact{
         font-size: .8em;
     }
+
     .titulo{
         font-size: 2em;
     }
+
     label{
         font-weight: bold;
         font-size: .9em;
-       
     }
+
     .button{
         font-size: .8em;
     }
+
     footer{
         height: 15em;
     }
 }
-
 }
+ /* -------comienza media queries-------- */
